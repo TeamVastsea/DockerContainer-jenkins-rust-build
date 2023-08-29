@@ -6,7 +6,6 @@ USER root
 
 # 初始化
 RUN \
-  sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && \
   ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
   echo 'Asia/Shanghai' > /etc/timezone && \
   apt-get update && \
